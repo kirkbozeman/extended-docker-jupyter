@@ -1,6 +1,6 @@
 ### JupyterLab in Docker
 
-This repo contains a dockerization of the most recent version of JupyterLab using Python 3.9.0 with a number of extra language kernels. 
+This repo contains a dockerization of the most recent version of JupyterLab on an Ubuntu 18.04 image. The image uses Python 3.8 with a number of extra language kernels. 
 
 This was written to avoid future issues with having to reinstall Jupyter w/ these extra kernels on new or different machines, as it is a pain to do. It was also written to practice a bit of bash scripting. :)
 
@@ -11,6 +11,10 @@ Current kernel support:
 - scala (https://almond.sh/)
 - R (https://github.com/IRkernel/IRkernel)
 
+Kernels to be added eventually:
+- Java
+- Go
+- ???
 
 Useful docker commands:
 ```bash
