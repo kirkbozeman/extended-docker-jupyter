@@ -5,7 +5,7 @@ RUN apt-get update \
   && apt-get upgrade -y \
     && apt-get install -y \
         software-properties-common \
-        openjdk-8-jre-headless \
+        openjdk-11-jdk \
         nodejs \
         golang \
         r-base \
@@ -40,12 +40,10 @@ RUN curl -Lo coursier https://git.io/coursier-cli \
 RUN R -e "install.packages('IRkernel')" \
     && R -e "IRkernel::installspec()"
 
-# install go
-#RUN wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz
-#RUN sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz
-#RUN export PATH=$PATH:/usr/local/go/bin
-#RUN export GOPATH=$HOME/go
-#RUN export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+# install Java kernel
+RUN git clone https://github.com/SpencerPark/IJava.git \
+    && cd IJava/ \
+    && ./gradlew installKernel
 
 # install go kernel (https://github.com/gopherdata/gophernotes)
 #RUN env GO111MODULE=off go get -d -u github.com/gopherdata/gophernotes

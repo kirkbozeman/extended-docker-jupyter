@@ -1,8 +1,9 @@
 jupyterlab
 
+#numpy
 #pandas
-sqlalchemy
+#sqlalchemy
 
-tzlocal
+#tzlocal
 
-boto3
+#boto3

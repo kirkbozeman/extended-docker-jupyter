@@ -10,9 +10,9 @@ Current kernel support:
 - spylon (spark/scala) (https://pypi.org/project/spylon-kernel/0.0.1/)
 - scala (https://almond.sh/)
 - R (https://github.com/IRkernel/IRkernel)
+- Java (https://github.com/SpencerPark/IJava)
 
 Kernels to be added eventually:
-- Java
 - Go
 - ???
 
