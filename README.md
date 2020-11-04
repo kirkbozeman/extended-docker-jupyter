@@ -7,10 +7,12 @@ This was written to avoid future issues with having to reinstall Jupyter w/ thes
 Why ubuntu? To play. Also to make installing Java a little easier. Unfortunately it makes the build a little long, but you only have to do it once.
 
 Current kernel support:
-- spylon (spark/scala) (https://pypi.org/project/spylon-kernel/0.0.1/)
-- scala (https://almond.sh/)
-- R (https://github.com/IRkernel/IRkernel)
 - Java (https://github.com/SpencerPark/IJava)
+- scala (https://almond.sh/)
+- Python 3.8
+- R (https://github.com/IRkernel/IRkernel)
+- Ruby
+- spylon (spark/scala) (https://pypi.org/project/spylon-kernel/0.0.1/)
 
 Kernels to be added eventually:
 - Go

@@ -9,6 +9,7 @@ RUN apt-get update \
         nodejs \
         golang \
         r-base \
+        ruby-full \
         vim \
         sudo \
         git \
@@ -44,6 +45,14 @@ RUN R -e "install.packages('IRkernel')" \
 RUN git clone https://github.com/SpencerPark/IJava.git \
     && cd IJava/ \
     && ./gradlew installKernel
+
+# install ruby / ruby kernel
+#RUN apt install ruby-full
+#RUN sudo apt install libtool libffi-dev ruby ruby-dev make
+#RUN sudo apt install libzmq3-dev libczmq-dev
+RUN gem install ffi-rzmq
+RUN gem install iruby --pre
+RUN iruby register --force
 
 # install go kernel (https://github.com/gopherdata/gophernotes)
 #RUN env GO111MODULE=off go get -d -u github.com/gopherdata/gophernotes
