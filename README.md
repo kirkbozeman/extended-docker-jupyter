@@ -6,6 +6,8 @@ This was written to avoid future issues with having to reinstall Jupyter w/ thes
 
 Why ubuntu? To play. Also to make installing Java a little easier. Unfortunately it makes the build a little long, but you only have to do it once.
 
+Also note I run this on port 8890 instead of the traditional 8888, this is to avoid clashes with any local notebook servers that are running.
+
 Current kernel support:
 - Java (https://github.com/SpencerPark/IJava)
 - scala (https://almond.sh/)
